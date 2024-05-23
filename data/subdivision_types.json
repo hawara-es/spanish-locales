@@ -1,0 +1,329 @@
+[
+  {
+    "internal_code": "administration"
+  },
+  {
+    "internal_code": "administrative_atoll"
+  },
+  {
+    "internal_code": "administrative_precinct"
+  },
+  {
+    "internal_code": "administrative_region"
+  },
+  {
+    "internal_code": "administrative_territory"
+  },
+  {
+    "internal_code": "arctic_region"
+  },
+  {
+    "internal_code": "area"
+  },
+  {
+    "internal_code": "autonomous_city_in_north_africa"
+  },
+  {
+    "internal_code": "autonomous_city"
+  },
+  {
+    "internal_code": "autonomous_community"
+  },
+  {
+    "internal_code": "autonomous_district"
+  },
+  {
+    "internal_code": "autonomous_municipality"
+  },
+  {
+    "internal_code": "autonomous_province"
+  },
+  {
+    "internal_code": "autonomous_region"
+  },
+  {
+    "internal_code": "autonomous_republic"
+  },
+  {
+    "internal_code": "autonomous_sector"
+  },
+  {
+    "internal_code": "autonomous_territorial_unit"
+  },
+  {
+    "internal_code": "borough"
+  },
+  {
+    "internal_code": "canton"
+  },
+  {
+    "internal_code": "capital_city"
+  },
+  {
+    "internal_code": "capital_district"
+  },
+  {
+    "internal_code": "capital_territory"
+  },
+  {
+    "internal_code": "capital"
+  },
+  {
+    "internal_code": "chain_of_islands"
+  },
+  {
+    "internal_code": "city_corporation"
+  },
+  {
+    "internal_code": "city_municipality"
+  },
+  {
+    "internal_code": "city_with_county_rights"
+  },
+  {
+    "internal_code": "city"
+  },
+  {
+    "internal_code": "commune"
+  },
+  {
+    "internal_code": "council_area"
+  },
+  {
+    "internal_code": "country"
+  },
+  {
+    "internal_code": "county"
+  },
+  {
+    "internal_code": "decentralized_regional_entity"
+  },
+  {
+    "internal_code": "department"
+  },
+  {
+    "internal_code": "dependency"
+  },
+  {
+    "internal_code": "district_municipality"
+  },
+  {
+    "internal_code": "district_with_special_status"
+  },
+  {
+    "internal_code": "district"
+  },
+  {
+    "internal_code": "districts_under_republic_administration"
+  },
+  {
+    "internal_code": "division"
+  },
+  {
+    "internal_code": "economic_prefecture"
+  },
+  {
+    "internal_code": "emirate"
+  },
+  {
+    "internal_code": "entity"
+  },
+  {
+    "internal_code": "european_collectivity"
+  },
+  {
+    "internal_code": "federal_capital_territory"
+  },
+  {
+    "internal_code": "federal_dependency"
+  },
+  {
+    "internal_code": "federal_district"
+  },
+  {
+    "internal_code": "federal_entity"
+  },
+  {
+    "internal_code": "federal_territory"
+  },
+  {
+    "internal_code": "free_municipal_consortium"
+  },
+  {
+    "internal_code": "geographical_entity"
+  },
+  {
+    "internal_code": "geographical_region"
+  },
+  {
+    "internal_code": "geographical_unit"
+  },
+  {
+    "internal_code": "governorate"
+  },
+  {
+    "internal_code": "group_of_islands_20_inhabited_islands"
+  },
+  {
+    "internal_code": "indigenous_region"
+  },
+  {
+    "internal_code": "island_council"
+  },
+  {
+    "internal_code": "island"
+  },
+  {
+    "internal_code": "islands_groups_of_islands"
+  },
+  {
+    "internal_code": "land"
+  },
+  {
+    "internal_code": "local_council"
+  },
+  {
+    "internal_code": "london_borough"
+  },
+  {
+    "internal_code": "metropolitan_administration"
+  },
+  {
+    "internal_code": "metropolitan_city"
+  },
+  {
+    "internal_code": "metropolitan_collectivity_with_special_status"
+  },
+  {
+    "internal_code": "metropolitan_department"
+  },
+  {
+    "internal_code": "metropolitan_district"
+  },
+  {
+    "internal_code": "metropolitan_region"
+  },
+  {
+    "internal_code": "municipality"
+  },
+  {
+    "internal_code": "oblast"
+  },
+  {
+    "internal_code": "outlying_area"
+  },
+  {
+    "internal_code": "overseas_collectivity_with_special_status"
+  },
+  {
+    "internal_code": "overseas_collectivity"
+  },
+  {
+    "internal_code": "overseas_departmental_collectivity"
+  },
+  {
+    "internal_code": "overseas_territory"
+  },
+  {
+    "internal_code": "overseas_unique_territorial_collectivity"
+  },
+  {
+    "internal_code": "pakistan_administered_area"
+  },
+  {
+    "internal_code": "parish"
+  },
+  {
+    "internal_code": "popularate"
+  },
+  {
+    "internal_code": "prefecture"
+  },
+  {
+    "internal_code": "province"
+  },
+  {
+    "internal_code": "quarter"
+  },
+  {
+    "internal_code": "rayon"
+  },
+  {
+    "internal_code": "region"
+  },
+  {
+    "internal_code": "regional_state"
+  },
+  {
+    "internal_code": "republic"
+  },
+  {
+    "internal_code": "rural_municipality"
+  },
+  {
+    "internal_code": "self_governed_part"
+  },
+  {
+    "internal_code": "special_administrative_city"
+  },
+  {
+    "internal_code": "special_administrative_region"
+  },
+  {
+    "internal_code": "special_city"
+  },
+  {
+    "internal_code": "special_island_authority"
+  },
+  {
+    "internal_code": "special_municipality"
+  },
+  {
+    "internal_code": "special_region"
+  },
+  {
+    "internal_code": "special_self_governing_city"
+  },
+  {
+    "internal_code": "special_self_governing_province"
+  },
+  {
+    "internal_code": "state_city"
+  },
+  {
+    "internal_code": "state"
+  },
+  {
+    "internal_code": "territorial_unit"
+  },
+  {
+    "internal_code": "territory"
+  },
+  {
+    "internal_code": "town_council"
+  },
+  {
+    "internal_code": "town"
+  },
+  {
+    "internal_code": "two_tier_county"
+  },
+  {
+    "internal_code": "union_territory"
+  },
+  {
+    "internal_code": "unitary_authority"
+  },
+  {
+    "internal_code": "urban_community"
+  },
+  {
+    "internal_code": "urban_municipality"
+  },
+  {
+    "internal_code": "voivodship"
+  },
+  {
+    "internal_code": "ward"
+  }
+]

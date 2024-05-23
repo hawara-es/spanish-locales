@@ -1,0 +1,31 @@
+{
+  "name": "hawara/spanish-locales",
+  "description": "Countries, language names and currencies and their translations to Spanish, Galician, Euskera and Catalan",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Hawara\\SpanishLocales\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Carlos Capote Pérez-Andreu",
+      "email": "carlos.capote@hawara.es"
+    }
+  ],
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "require-dev": {
+    "psy/psysh": "^0.12.3",
+    "pestphp/pest": "^2.34"
+  }
+}
