@@ -9,3 +9,9 @@ test('iterates through the languages', function () {
     expect($language)->toHaveProperty('alpha_2');
     expect($language)->toHaveProperty('alpha_3');
 });
+
+test('returns the path to the languages file', function () {
+    $languagesPath = (new Languages)->path();
+
+    expect(file_exists($languagesPath))->toBeTrue();
+});

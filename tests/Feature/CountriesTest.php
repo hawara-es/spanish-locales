@@ -11,3 +11,9 @@ test('iterates through the countries', function () {
     expect($country)->toHaveProperty('numeric_code');
     expect($country)->toHaveProperty('flag');
 });
+
+test('returns the path to the countries file', function () {
+    $countriesPath = (new Countries)->path();
+
+    expect(file_exists($countriesPath))->toBeTrue();
+});
