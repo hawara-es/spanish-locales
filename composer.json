@@ -27,5 +27,8 @@
   "require-dev": {
     "psy/psysh": "^0.12.3",
     "pestphp/pest": "^2.34"
+  },
+  "scripts": {
+    "test": "pest"
   }
 }
