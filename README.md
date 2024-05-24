@@ -52,12 +52,20 @@ $currencies = new Currencies;
 $languages = new Languages;
 ```
 
-Or by passing it the path to an alternative **JSON** file:
+... by passing it the path to an alternative **JSON** file:
 
 ```php
 $countries = new Countries(__DIR__.'/data/countries.json');
 $currencies = new Currencies(__DIR__.'/data/currencies.json');
 $languages = new Languages(__DIR__.'/data/languages.json');
+```
+
+... and/or by passing it the list of languages that you wish to include:
+
+```php
+$countries = new Countries(languages: ['ca', 'es', 'eu', 'gl']);
+$currencies = new Currencies(languages: ['ca', 'es', 'eu', 'gl']);
+$languages = new Languages(languages: ['ca', 'es', 'eu', 'gl']);
 ```
 
 #### Countries
@@ -84,12 +92,29 @@ foreach($countries->iterate() as $country) {
 }
 ```
 
+If you specified some languages when you instantiated the countries object, you'll obtain them as an extra `translations` property:
+
+```json
+{
+  "alpha_2": "AX",
+  "alpha_3": "ALA",
+  "numeric_code": "248",
+  "flag": "🇦🇽",
+  "translations": {
+    "ca": "Illes Åland",
+    "es": "Islas Åland",
+    "eu": "Åland uharteak",
+    "gl": "Illas Åland"
+  }
+}
+```
+
 ##### Locate `countries.json`
 
-The `path` method returns the path to the base JSON file that contains the countries.
+The `getPath` method returns the path to the base JSON file that contains the countries.
 
 ```php
-$countries->path();
+$countries->getPath();
 
 //your/path/to/data/countries.json
 ```
@@ -116,10 +141,10 @@ foreach($currencies->iterate() as $currency) {
 
 ##### Locate `currencies.json`
 
-The `path` method returns the path to the base JSON file that contains the currencies.
+The `getPath` method returns the path to the base JSON file that contains the currencies.
 
 ```php
-$currencies->path();
+$currencies->getPath();
 
 //your/path/to/data/currencies.json
 ```
@@ -146,10 +171,10 @@ foreach($languages->iterate() as $language) {
 
 ##### Locate `languages.json`
 
-The `path` method returns the path to the base JSON file that contains the languages.
+The `getPath` method returns the path to the base JSON file that contains the languages.
 
 ```php
-$languages->path();
+$languages->getPath();
 
 //your/path/to/data/languages.json
 ```

@@ -2,22 +2,26 @@
 
 namespace Hawara\SpanishLocales;
 
+use Hawara\SpanishLocales\Contracts\Accessible;
 use Hawara\SpanishLocales\Contracts\Iteratable;
+use Hawara\SpanishLocales\Translators\SubdivisionTypeTranslator;
 
-class SubdivisionTypes implements Iteratable
+class SubdivisionTypes extends AbstractIterable implements Accessible, Iteratable
 {
     public function __construct(
-        protected ?string $path = null,
+        ?string $path = null,
+        array $languages = [],
     ) {
         $this->path = $path ?? realpath(__DIR__.'/../data/subdivision_types.json');
+        $content = file_get_contents($this->path);
+        $this->items = json_decode($content);
+        foreach ($languages as $language) {
+            $this->dictionaries[$language] = new SubdivisionTypeTranslator($language);
+        }
     }
 
-    public function iterate(): \Generator
+    public function getItemKey(object $item): string
     {
-        $content = file_get_contents($this->path);
-
-        foreach (json_decode($content) as $subdivisionType) {
-            yield $subdivisionType;
-        }
+        return $item->internal_code;
     }
 }

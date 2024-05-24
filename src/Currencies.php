@@ -4,26 +4,24 @@ namespace Hawara\SpanishLocales;
 
 use Hawara\SpanishLocales\Contracts\Accessible;
 use Hawara\SpanishLocales\Contracts\Iteratable;
+use Hawara\SpanishLocales\Translators\CurrencyTranslator;
 
-class Currencies implements Accessible, Iteratable
+class Currencies extends AbstractIterable implements Accessible, Iteratable
 {
     public function __construct(
-        protected ?string $path = null,
+        ?string $path = null,
+        array $languages = [],
     ) {
         $this->path = $path ?? realpath(__DIR__.'/../data/currencies.json');
-    }
-
-    public function path(): string
-    {
-        return $this->path;
-    }
-
-    public function iterate(): \Generator
-    {
-        $content = file_get_contents($this->path());
-
-        foreach (json_decode($content) as $currency) {
-            yield $currency;
+        $content = file_get_contents($this->path);
+        $this->items = json_decode($content);
+        foreach ($languages as $language) {
+            $this->dictionaries[$language] = new CurrencyTranslator($language);
         }
+    }
+
+    public function getItemKey(object $item): string
+    {
+        return $item->letter_code;
     }
 }
